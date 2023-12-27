@@ -21,8 +21,7 @@ public class Main {
     }
 
     static void BubbleSort(int[] arr) {
-        for (in
-        t i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
                     Swap(arr, j, j + 1);
