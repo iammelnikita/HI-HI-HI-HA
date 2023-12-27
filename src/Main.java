@@ -16,6 +16,26 @@ public class Main {
         System.out.println("Max: " + ArrayMax(arr));
         System.out.println("Min: " + ArrayMin(arr));
         System.out.println("Avg: " + ArrayAvg(arr));
+
+        BubbleSort(arr);
+    }
+
+    static void BubbleSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    Swap(arr, j, j + 1);
+                }
+            }
+        }
+
+        ArrayOut(arr);
+    }
+
+    static void Swap(int[] arr, int left, int right) {
+        int temp = arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
     }
     
     static void ArrayOut(int[] arr) {
